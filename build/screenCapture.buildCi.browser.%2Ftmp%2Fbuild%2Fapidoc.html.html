@@ -1,0 +1,1790 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/noopkat/avrgirl-arduino">avrgirl-arduino (v2.0.0)</a>
+</h1>
+<h4>A NodeJS library for flashing compiled sketch files to Arduino microcontroller boards.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino">module avrgirl-arduino</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avrgirl-arduino">
+            function <span class="apidocSignatureSpan"></span>avrgirl-arduino
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>avr109
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>connection
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.list">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>list
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.listPorts">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>listPorts
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocol">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocol
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v1">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v1
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v2">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v2
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>avr109.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>connection.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocol.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocols</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v1.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v2.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">avrgirl-arduino.</span>tools</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.avr109">module avrgirl-arduino.avr109</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109.avr109">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>avr109
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109.super_">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.avr109.prototype">module avrgirl-arduino.avr109.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109.prototype._reset">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_reset
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109.prototype._upload">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_upload
+            <span class="apidocSignatureSpan">(file, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.avr109.prototype._write">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_write
+            <span class="apidocSignatureSpan">(data, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.connection">module avrgirl-arduino.connection</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.connection">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>connection
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.connection.prototype">module avrgirl-arduino.connection.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._cycleDTR">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_cycleDTR
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._init">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_init
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._listPorts">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_listPorts
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._pollForOpen">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_pollForOpen
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._pollForPort">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_pollForPort
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._setDTR">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_setDTR
+            <span class="apidocSignatureSpan">(bool, timeout, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._setUpSerial">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_setUpSerial
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.connection.prototype._sniffPort">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_sniffPort
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.protocol">module avrgirl-arduino.protocol</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocol.protocol">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocol
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.protocol.prototype">module avrgirl-arduino.protocol.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocol.prototype._reset">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.protocol.prototype.</span>_reset
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.protocols">module avrgirl-arduino.protocols</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocols.avr109">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>avr109
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocols.stk500v1">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>stk500v1
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.protocols.stk500v2">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>stk500v2
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.stk500v1">module avrgirl-arduino.stk500v1</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v1.stk500v1">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v1
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v1.super_">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.stk500v1.prototype">module avrgirl-arduino.stk500v1.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v1.prototype._reset">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.prototype.</span>_reset
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v1.prototype._upload">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.prototype.</span>_upload
+            <span class="apidocSignatureSpan">(file, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.stk500v2">module avrgirl-arduino.stk500v2</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v2.stk500v2">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v2
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v2.super_">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v2.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.stk500v2.prototype">module avrgirl-arduino.stk500v2.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.stk500v2.prototype._upload">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v2.prototype.</span>_upload
+            <span class="apidocSignatureSpan">(file, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.avrgirl-arduino.tools">module avrgirl-arduino.tools</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.avrgirl-arduino.tools._parseHex">
+            function <span class="apidocSignatureSpan">avrgirl-arduino.tools.</span>_parseHex
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino" id="apidoc.module.avrgirl-arduino">module avrgirl-arduino</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avrgirl-arduino" id="apidoc.element.avrgirl-arduino.avrgirl-arduino">
+        function <span class="apidocSignatureSpan"></span>avrgirl-arduino
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">avrgirl-arduino = function (opts) {
+  opts = opts || {};
+
+  this.options = {
+    debug: opts.debug || false,
+    board: opts.board || 'uno',
+    port: opts.port || ''
+  };
+
+  // this here checks for 3 conditions:
+  // if debug option is simply true, we want to fall back to default debug function
+  // if a custom debug function is passed in, we want to assign debug to be that
+  // if debug option is false, then run debug as a no-op
+  if (this.options.debug === true) {
+    this.debug = console.log.bind(console);
+  } else if (typeof this.options.debug === 'function') {
+    this.debug = this.options.debug;
+  } else {
+    this.debug = function() {};
+  }
+
+  if (typeof this.options.board === 'string') {
+    this.options.board = boards.byName[this.options.board];
+  } else if (typeof this.options.board === 'object') {
+    this.options.board = this.options.board;
+  }
+
+  this.connection = new Connection(this.options);
+
+  if (this.options.board) {
+    var Protocol = protocols[this.options.board.protocol] || function() {};
+
+    this.protocol = new Protocol({
+      board: this.options.board,
+      connection: this.connection,
+      debug: this.debug
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109" id="apidoc.element.avrgirl-arduino.avr109">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>avr109
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">avr109 = function (options) {
+  options.protocol = function() { return AVR109; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection" id="apidoc.element.avrgirl-arduino.connection">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>connection
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connection = function (options) {
+  this.options = options;
+  this.debug = this.options.debug ? console.log.bind(console) : function() {};
+
+  this.board = this.options.board;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.list" id="apidoc.element.avrgirl-arduino.list">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>list
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function (callback) {
+  return Connection.prototype._listPorts(callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+port: '/dev/cu.usbmodem1412'
+});
+```
+
+You can list available USB ports programmatically using the the `list` method:
+
+```javascript
+Avrgirl.<span class="apidocCodeKeywordSpan">list</span>(function(err, ports) {
+console.log(ports);
+/*
+[ { comName: '/dev/cu.usbmodem1421',
+	   manufacturer: 'Arduino (www.arduino.cc)',
+    serialNumber: '55432333038351F03170',
+    pnpId: '',
+    locationId: '0x14200000',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.listPorts" id="apidoc.element.avrgirl-arduino.listPorts">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>listPorts
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listPorts = function (callback) {
+  return Connection.prototype._listPorts(callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case 'boards': {
+  var boardNames = Object.keys(boards.byName).sort();
+  console.log('Supported Boards:\n - ' + boardNames.join('\n - '));
+  break;
+}
+
+case 'list': {
+  Avrgirl.<span class="apidocCodeKeywordSpan">listPorts</span>(function(err, ports) {
+    console.log(ports);
+  });
+
+  break;
+}
+
+case 'help': {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocol" id="apidoc.element.avrgirl-arduino.protocol">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocol
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">protocol = function (options) {
+  this.debug = options.debug;
+
+  this.board = options.board;
+  this.connection = options.connection;
+
+  this.chip = new options.protocol({ quiet: true });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+var Protocol = function(options) {
+ this.debug = options.debug;
+
+ this.board = options.board;
+ this.connection = options.connection;
+
+ this.chip = new options.<span class="apidocCodeKeywordSpan">protocol</span>({ quiet: true });
+};
+
+/**
+* Resets an Arduino STK500 bootloaded chip by pulsing DTR high.
+*
+* Avoids the dreaded timeout bug if the serialport was opened since the device
+* was powered.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v1" id="apidoc.element.avrgirl-arduino.stk500v1">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v1
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v1 = function (options) {
+  options.protocol = STK;
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v2" id="apidoc.element.avrgirl-arduino.stk500v2">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v2
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v2 = function (options) {
+  options.protocol = function() { return STK2; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.avr109" id="apidoc.module.avrgirl-arduino.avr109">module avrgirl-arduino.avr109</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109.avr109" id="apidoc.element.avrgirl-arduino.avr109.avr109">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>avr109
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">avr109 = function (options) {
+  options.protocol = function() { return AVR109; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109.super_" id="apidoc.element.avrgirl-arduino.avr109.super_">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+  this.debug = options.debug;
+
+  this.board = options.board;
+  this.connection = options.connection;
+
+  this.chip = new options.protocol({ quiet: true });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.avr109.prototype" id="apidoc.module.avrgirl-arduino.avr109.prototype">module avrgirl-arduino.avr109.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109.prototype._reset" id="apidoc.element.avrgirl-arduino.avr109.prototype._reset">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_reset
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_reset = function (callback) {
+  var _this = this;
+  var conn;
+
+  // creating a temporary connection for resetting only
+  var tempSerialPort = new Serialport(_this.connection.options.port, {
+    baudRate: 1200,
+    autoOpen: false
+  });
+
+  _this.connection.serialPort = tempSerialPort;
+  conn = _this.connection;
+
+  _this.debug('resetting board...');
+
+  _this.connection.serialPort.once('close', function() {
+    async.series([
+      conn._setUpSerial.bind(conn),
+      conn._pollForPort.bind(conn)
+    ],
+    function(error) {
+      return callback(error);
+    });
+  });
+
+  async.series([
+    tempSerialPort.open.bind(tempSerialPort),
+    conn._cycleDTR.bind(conn)
+  ],
+  function(error) {
+    if (error) {
+      return callback(error);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  data = file;
+}
+  } catch (error) {
+return callback(error);
+  }
+
+  _this.<span class="apidocCodeKeywordSpan">_reset</span>(function(error) {
+if (error) { return callback(error); }
+
+_this.debug('reset complete.');
+
+_this.connection._pollForOpen(function(error) {
+  if (error) { return callback(error); }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109.prototype._upload" id="apidoc.element.avrgirl-arduino.avr109.prototype._upload">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_upload
+        <span class="apidocSignatureSpan">(file, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_upload = function (file, callback) {
+  var _this = this;
+  var data;
+
+  try {
+    if (typeof file === 'string') {
+      data = fs.readFileSync(file, {
+        encoding: 'utf8'
+      });
+    } else {
+      data = file;
+    }
+  } catch (error) {
+    return callback(error);
+  }
+
+  _this._reset(function(error) {
+    if (error) { return callback(error); }
+
+    _this.debug('reset complete.');
+
+    _this.connection._pollForOpen(function(error) {
+      if (error) { return callback(error); }
+
+      _this.debug('connected');
+
+      _this._write(data, function(error) {
+        var color = (error ? colors.red : colors.green);
+        _this.debug(color('flash complete.'));
+
+        // Can't close the serialport on avr109 boards &gt;&gt; node-serialport/issues/415
+        // _this.serialPort.close();
+
+        return callback(error);
+      });
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   if (error) { return callback(error); }
+
+   // set up serialport connection
+   _this.connection._init(function(error) {
+     if (error) { return callback(error); }
+
+     // upload file to board
+     _this.protocol.<span class="apidocCodeKeywordSpan">_upload</span>(file, callback);
+   });
+ });
+};
+
+/**
+* Return a list of devices on serial ports. In addition to the output provided
+* by SerialPort.list, it adds a platform independent PID in _pid
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.avr109.prototype._write" id="apidoc.element.avrgirl-arduino.avr109.prototype._write">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.avr109.prototype.</span>_write
+        <span class="apidocSignatureSpan">(data, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_write = function (data, callback) {
+  var _this = this;
+
+  var options = {
+    signature: _this.board.signature.toString(),
+    debug: false
+  };
+
+  _this.chip.init(_this.connection.serialPort, options, function(error, flasher) {
+    if (error) { return callback(error); }
+
+    _this.debug('flashing, please wait...');
+
+    async.series([
+      flasher.erase.bind(flasher),
+      flasher.program.bind(flasher, data.toString()),
+      function verify(done) {
+        flasher.verify(done);
+      },
+
+      flasher.fuseCheck.bind(flasher)
+    ],
+    function(error) {
+      return callback(error);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    _this.debug('reset complete.');
+
+    _this.connection._pollForOpen(function(error) {
+      if (error) { return callback(error); }
+
+      _this.debug('connected');
+
+      _this.<span class="apidocCodeKeywordSpan">_write</span>(data, function(error) {
+var color = (error ? colors.red : colors.green);
+_this.debug(color('flash complete.'));
+
+// Can't close the serialport on avr109 boards &gt;&gt; node-serialport/issues/415
+// _this.serialPort.close();
+
+return callback(error);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.connection" id="apidoc.module.avrgirl-arduino.connection">module avrgirl-arduino.connection</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.connection" id="apidoc.element.avrgirl-arduino.connection.connection">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>connection
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connection = function (options) {
+  this.options = options;
+  this.debug = this.options.debug ? console.log.bind(console) : function() {};
+
+  this.board = this.options.board;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.connection.prototype" id="apidoc.module.avrgirl-arduino.connection.prototype">module avrgirl-arduino.connection.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._cycleDTR" id="apidoc.element.avrgirl-arduino.connection.prototype._cycleDTR">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_cycleDTR
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_cycleDTR = function (callback) {
+  var _this = this;
+
+  async.series([
+    _this._setDTR.bind(_this, true, 250),
+    _this._setDTR.bind(_this, false, 50)
+  ],
+  function(error) {
+    return callback(error);
+  });
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @param {function} callback - function to run upon completion/error
+ */
+Protocol.prototype._reset = function(callback) {
+  var _this = this;
+
+  // cycle DTR/RTS from low to high
+  _this.connection.<span class="apidocCodeKeywordSpan">_cycleDTR</span>(function(error) {
+    if (!error) {
+      _this.debug('reset complete.');
+    }
+
+    return callback(error);
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._init" id="apidoc.element.avrgirl-arduino.connection.prototype._init">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_init
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_init = function (callback) {
+  var _this = this;
+
+  // check for port
+  if (!_this.options.port) {
+    // no port, auto sniff for the correct one
+    _this._sniffPort(function(error, port) {
+      if (port.length) {
+        // found a port, save it
+        _this.options.port = port[0].comName;
+
+        _this.debug('found ' + _this.options.board.name + ' on port ' + _this.options.port);
+
+        // set up serialport for it
+        _this._setUpSerial(function(error) {
+          return callback(error);
+        });
+      } else {
+        // we didn't find the board
+        return callback(new Error('no Arduino ' + '\'' + _this.options.board.name + '\'' + ' found.'));
+      }
+    });
+
+  } else {
+    // when a port is manually specified
+    _this._setUpSerial(function(error) {
+      return callback(error);
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var _this = this;
+
+  // validate board properties first
+  _this._validateBoard(function(error) {
+    if (error) { return callback(error); }
+
+    // set up serialport connection
+    _this.connection.<span class="apidocCodeKeywordSpan">_init</span>(function(error) {
+      if (error) { return callback(error); }
+
+      // upload file to board
+      _this.protocol._upload(file, callback);
+    });
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._listPorts" id="apidoc.element.avrgirl-arduino.connection.prototype._listPorts">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_listPorts
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_listPorts = function (callback) {
+  var foundPorts = [];
+
+  // list all available ports
+  Serialport.list(function(err, ports) {
+    if (err) { return callback(err); }
+
+    // iterate through ports
+    for (var i = 0; i &lt; ports.length; i += 1) {
+      var pid;
+
+      // are we on windows or unix?
+      if (ports[i].productId) {
+        pid = ports[i].productId;
+      } else if (ports[i].pnpId) {
+        try {
+          pid = '0x' + /PID_\d*/.exec(ports[i].pnpId)[0].substr(4);
+        } catch (err) {
+          pid = '';
+        }
+      } else {
+        pid = '';
+      }
+
+      ports[i]._standardPid = pid;
+      foundPorts.push(ports[i]);
+    }
+
+    return callback(null, foundPorts);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Return a list of devices on serial ports. In addition to the output provided
+ * by SerialPort.list, it adds a platform independent PID in _pid
+ *
+ * @param {function} callback - function to run upon completion/error
+ */
+AvrgirlArduino.prototype.listPorts = AvrgirlArduino.listPorts =
+AvrgirlArduino.prototype.list = AvrgirlArduino.list = function(callback) {
+  return Connection.prototype.<span class="apidocCodeKeywordSpan">_listPorts</span>(callback);
+};
+
+module.exports = AvrgirlArduino;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._pollForOpen" id="apidoc.element.avrgirl-arduino.connection.prototype._pollForOpen">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_pollForOpen
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_pollForOpen = function (callback) {
+  var _this = this;
+
+  var poll = awty(function(next) {
+    _this.serialPort.open(function(error) {
+      next(!error);
+    });
+  });
+
+  poll.every(100).ask(6);
+
+  poll(function(isOpen) {
+    var error;
+    if (!isOpen)Â&nbsp;{
+      error = new Error('could not open board on ' + _this.serialPort.path);
+    }
+
+    callback(error);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  _this._reset(function(error) {
+    if (error) { return callback(error); }
+
+    _this.debug('reset complete.');
+
+    _this.connection.<span class="apidocCodeKeywordSpan">_pollForOpen</span>(function(error) {
+if (error) { return callback(error); }
+
+_this.debug('connected');
+
+_this._write(data, function(error) {
+  var color = (error ? colors.red : colors.green);
+  _this.debug(color('flash complete.'));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._pollForPort" id="apidoc.element.avrgirl-arduino.connection.prototype._pollForPort">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_pollForPort
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_pollForPort = function (callback) {
+  var _this = this;
+
+  var poll = awty(function(next) {
+    var found = false;
+
+    // try to sniff port instead (for port hopping devices)
+    _this._sniffPort(function(error, port) {
+      if (port.length) {
+        // found a port, save it
+        _this.options.port = port[0].comName;
+        found = true;
+      }
+
+      next(found);
+    });
+  });
+
+  poll.every(100).ask(15);
+
+  poll(function(foundPort) {
+    if (foundPort) {
+      // set up serialport for it
+      _this._setUpSerial(function(error) {
+        return callback(error);
+      });
+    } else {
+      // we also could not find the device on auto sniff
+      return callback(new Error('could not reconnect after resetting board.'));
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._setDTR" id="apidoc.element.avrgirl-arduino.connection.prototype._setDTR">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_setDTR
+        <span class="apidocSignatureSpan">(bool, timeout, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_setDTR = function (bool, timeout, callback) {
+  var _this = this;
+  var props = {
+    rts: bool,
+    dtr: bool
+  };
+
+  _this.serialPort.set(props, function(error) {
+    if (error) { return callback(error); }
+
+    setTimeout(function() {
+      callback(error);
+    }, timeout);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    });
+  });
+};
+
+Stk500v1.prototype._reset = function(callback) {
+  var _this = this;
+
+  _this.connection.<span class="apidocCodeKeywordSpan">_setDTR</span>(true, 250, function(error) {
+    if (!error) {
+      _this.debug('reset complete.');
+    }
+
+    return callback(error);
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._setUpSerial" id="apidoc.element.avrgirl-arduino.connection.prototype._setUpSerial">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_setUpSerial
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_setUpSerial = function (callback) {
+  this.serialPort = new Serialport(this.options.port, {
+    baudRate: this.board.baud,
+    autoOpen: false
+  });
+  return callback(null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (port.length) {
+    // found a port, save it
+    _this.options.port = port[0].comName;
+
+    _this.debug('found ' + _this.options.board.name + ' on port ' + _this.options.port);
+
+    // set up serialport for it
+    _this.<span class="apidocCodeKeywordSpan">_setUpSerial</span>(function(error) {
+      return callback(error);
+    });
+  } else {
+    // we didn't find the board
+    return callback(new Error('no Arduino ' + '\'' + _this.options.board.name + '\'' + &amp;#
+x27; found.'));
+  }
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.connection.prototype._sniffPort" id="apidoc.element.avrgirl-arduino.connection.prototype._sniffPort">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.connection.prototype.</span>_sniffPort
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_sniffPort = function (callback) {
+  var _this = this;
+  var pidList = _this.board.productId.map(function(id) {
+    return parseInt(id, 16);
+  });
+
+  _this._listPorts(function(error, ports) {
+    // filter for a match by product id
+    var portMatch = ports.filter(function(p) {
+      return pidList.indexOf(parseInt(p._standardPid, 16)) !== -1;
+    });
+
+    return callback(null, portMatch);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Connection.prototype._init = function(callback) {
+  var _this = this;
+
+  // check for port
+  if (!_this.options.port) {
+    // no port, auto sniff for the correct one
+    _this.<span class="apidocCodeKeywordSpan">_sniffPort</span>(function(error, port) {
+      if (port.length) {
+// found a port, save it
+_this.options.port = port[0].comName;
+
+_this.debug('found ' + _this.options.board.name + ' on port ' + _this.options.port);
+
+// set up serialport for it
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.protocol" id="apidoc.module.avrgirl-arduino.protocol">module avrgirl-arduino.protocol</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocol.protocol" id="apidoc.element.avrgirl-arduino.protocol.protocol">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>protocol
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">protocol = function (options) {
+  this.debug = options.debug;
+
+  this.board = options.board;
+  this.connection = options.connection;
+
+  this.chip = new options.protocol({ quiet: true });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+var Protocol = function(options) {
+ this.debug = options.debug;
+
+ this.board = options.board;
+ this.connection = options.connection;
+
+ this.chip = new options.<span class="apidocCodeKeywordSpan">protocol</span>({ quiet: true });
+};
+
+/**
+* Resets an Arduino STK500 bootloaded chip by pulsing DTR high.
+*
+* Avoids the dreaded timeout bug if the serialport was opened since the device
+* was powered.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.protocol.prototype" id="apidoc.module.avrgirl-arduino.protocol.prototype">module avrgirl-arduino.protocol.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocol.prototype._reset" id="apidoc.element.avrgirl-arduino.protocol.prototype._reset">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.protocol.prototype.</span>_reset
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_reset = function (callback) {
+  var _this = this;
+
+  // cycle DTR/RTS from low to high
+  _this.connection._cycleDTR(function(error) {
+    if (!error) {
+      _this.debug('reset complete.');
+    }
+
+    return callback(error);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  data = file;
+}
+  } catch (error) {
+return callback(error);
+  }
+
+  _this.<span class="apidocCodeKeywordSpan">_reset</span>(function(error) {
+if (error) { return callback(error); }
+
+_this.debug('reset complete.');
+
+_this.connection._pollForOpen(function(error) {
+  if (error) { return callback(error); }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.protocols" id="apidoc.module.avrgirl-arduino.protocols">module avrgirl-arduino.protocols</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocols.avr109" id="apidoc.element.avrgirl-arduino.protocols.avr109">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>avr109
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">avr109 = function (options) {
+  options.protocol = function() { return AVR109; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocols.stk500v1" id="apidoc.element.avrgirl-arduino.protocols.stk500v1">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>stk500v1
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v1 = function (options) {
+  options.protocol = STK;
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.protocols.stk500v2" id="apidoc.element.avrgirl-arduino.protocols.stk500v2">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.protocols.</span>stk500v2
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v2 = function (options) {
+  options.protocol = function() { return STK2; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.stk500v1" id="apidoc.module.avrgirl-arduino.stk500v1">module avrgirl-arduino.stk500v1</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v1.stk500v1" id="apidoc.element.avrgirl-arduino.stk500v1.stk500v1">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v1
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v1 = function (options) {
+  options.protocol = STK;
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v1.super_" id="apidoc.element.avrgirl-arduino.stk500v1.super_">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+  this.debug = options.debug;
+
+  this.board = options.board;
+  this.connection = options.connection;
+
+  this.chip = new options.protocol({ quiet: true });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.stk500v1.prototype" id="apidoc.module.avrgirl-arduino.stk500v1.prototype">module avrgirl-arduino.stk500v1.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v1.prototype._reset" id="apidoc.element.avrgirl-arduino.stk500v1.prototype._reset">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.prototype.</span>_reset
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_reset = function (callback) {
+  var _this = this;
+
+  _this.connection._setDTR(true, 250, function(error) {
+    if (!error) {
+      _this.debug('reset complete.');
+    }
+
+    return callback(error);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  data = file;
+}
+  } catch (error) {
+return callback(error);
+  }
+
+  _this.<span class="apidocCodeKeywordSpan">_reset</span>(function(error) {
+if (error) { return callback(error); }
+
+_this.debug('reset complete.');
+
+_this.connection._pollForOpen(function(error) {
+  if (error) { return callback(error); }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v1.prototype._upload" id="apidoc.element.avrgirl-arduino.stk500v1.prototype._upload">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v1.prototype.</span>_upload
+        <span class="apidocSignatureSpan">(file, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_upload = function (file, callback) {
+  var _this = this;
+
+  this.serialPort = this.connection.serialPort;
+
+  // open/parse supplied hex file
+  var hex = tools._parseHex(file);
+  if (!Buffer.isBuffer(hex)) {
+    return callback(hex);
+  }
+
+  // open connection
+  _this.serialPort.open(function(error) {
+    if (error) { return callback(error); }
+
+    _this.debug('connected');
+
+    // reset
+    _this._reset(function(error) {
+      if (error) { return callback(error); }
+
+      _this.debug('flashing, please wait...');
+
+      // flash
+      _this.chip.bootload(_this.serialPort, hex, _this.board, function(error) {
+        var color = (error ? colors.red : colors.green);
+
+        _this.debug(color('flash complete.'));
+
+        // Always close the serialport
+        _this.serialPort.close();
+
+        return callback(error);
+      });
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   if (error) { return callback(error); }
+
+   // set up serialport connection
+   _this.connection._init(function(error) {
+     if (error) { return callback(error); }
+
+     // upload file to board
+     _this.protocol.<span class="apidocCodeKeywordSpan">_upload</span>(file, callback);
+   });
+ });
+};
+
+/**
+* Return a list of devices on serial ports. In addition to the output provided
+* by SerialPort.list, it adds a platform independent PID in _pid
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.stk500v2" id="apidoc.module.avrgirl-arduino.stk500v2">module avrgirl-arduino.stk500v2</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v2.stk500v2" id="apidoc.element.avrgirl-arduino.stk500v2.stk500v2">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.</span>stk500v2
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stk500v2 = function (options) {
+  options.protocol = function() { return STK2; };
+
+  Protocol.call(this, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v2.super_" id="apidoc.element.avrgirl-arduino.stk500v2.super_">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v2.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function (options) {
+  this.debug = options.debug;
+
+  this.board = options.board;
+  this.connection = options.connection;
+
+  this.chip = new options.protocol({ quiet: true });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.stk500v2.prototype" id="apidoc.module.avrgirl-arduino.stk500v2.prototype">module avrgirl-arduino.stk500v2.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.stk500v2.prototype._upload" id="apidoc.element.avrgirl-arduino.stk500v2.prototype._upload">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.stk500v2.prototype.</span>_upload
+        <span class="apidocSignatureSpan">(file, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_upload = function (file, callback) {
+  var _this = this;
+
+  // open/parse supplied hex file
+  _this.serialPort = _this.connection.serialPort;
+
+  var hex = tools._parseHex(file);
+  if (!Buffer.isBuffer(hex)) {
+    return callback(hex);
+  }
+
+  // open connection
+  _this.serialPort.open(function(error) {
+    if (error) { return callback(error); }
+
+    _this.debug('connected');
+
+    // instantiate stk500v2 with newly open serialport
+    var chip = _this.chip(_this.serialPort);
+
+    async.series([
+      _this._reset.bind(_this),
+      chip.sync.bind(chip, 5),
+      chip.verifySignature.bind(chip, _this.board.signature),
+      chip.enterProgrammingMode.bind(chip, _this.board),
+      function debugLog(callback) {
+        _this.debug('flashing, please wait...');
+        callback(null);
+      },
+
+      chip.upload.bind(chip, hex, _this.board.pageSize),
+      chip.exitProgrammingMode.bind(chip)
+    ],
+    function(error) {
+      var color = (error ? colors.red : colors.green);
+      _this.debug(color('flash complete.'));
+
+      // Always close the serialport
+      _this.serialPort.close();
+
+      return callback(error);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   if (error) { return callback(error); }
+
+   // set up serialport connection
+   _this.connection._init(function(error) {
+     if (error) { return callback(error); }
+
+     // upload file to board
+     _this.protocol.<span class="apidocCodeKeywordSpan">_upload</span>(file, callback);
+   });
+ });
+};
+
+/**
+* Return a list of devices on serial ports. In addition to the output provided
+* by SerialPort.list, it adds a platform independent PID in _pid
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.avrgirl-arduino.tools" id="apidoc.module.avrgirl-arduino.tools">module avrgirl-arduino.tools</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.avrgirl-arduino.tools._parseHex" id="apidoc.element.avrgirl-arduino.tools._parseHex">
+        function <span class="apidocSignatureSpan">avrgirl-arduino.tools.</span>_parseHex
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_parseHex = function (file) {
+  try {
+    var data;
+    if (typeof file === 'string') {
+      data = fs.readFileSync(file, {
+        encoding: 'utf8'
+      });
+    } else {
+      data = file;
+    }
+
+    return intelhex.parse(data).data;
+  } catch (error) {
+    return error;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+Stk500v1.prototype._upload = function(file, callback) {
+var _this = this;
+
+this.serialPort = this.connection.serialPort;
+
+// open/parse supplied hex file
+var hex = tools.<span class="apidocCodeKeywordSpan">_parseHex</span>(file);
+if (!Buffer.isBuffer(hex)) {
+  return callback(hex);
+}
+
+// open connection
+_this.serialPort.open(function(error) {
+  if (error) { return callback(error); }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
